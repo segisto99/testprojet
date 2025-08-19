@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Élevage de moutons premium pour la Tabaski 2026 - Qualité exceptionnelle, suivi personnalisé et livraison garantie">
+    <title>Taaru Élevage - Moutons Premium pour Tabaski 2026</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://taaru-elevage.vercel.app/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://taaru-elevage.vercel.app/apple-touch-icon.png">
+    
+    <!-- Font Awesome (une seule inclusion) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    
+    <!-- Votre CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+
+    
+    <!-- Préchargement des ressources importantes -->
+    <link rel="preload" href="https://taaru-elevage.vercel.app/images/hero-bg.jpg" as="image">
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html#" class="logo animate__animated animate__fadeInLeft">
+                 <img src="images/WhatsApp%20Image%202025-08-16%20à%2011.57.00_3ad3532b.jpg" alt="" style=" width:100px ; height: 100px; border-radius: 10%; ">
+                <i class="fas fa-sheep-head"></i>  <span>Taaru</span>Élevage
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html#offres"><i class="fas fa-sheep"></i> Nos Moutons</a>
+                <a href="index.html#process"><i class="fas fa-hands-helping"></i> Notre Process</a>
+                <a href="index.html#contact" class="cta-nav"><i class="fas fa-phone"></i> Contact</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    
+    <header class="hero">
+        <div class="hero-overlay">
+        </div>
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInUp">
+                <div class="arabic-decoration"></div>
+                <h1>Moutons pour <span>Tabaski 2026</span></h1>
+                <p class="subtitle">Paiement échelonné sur 10 mois - Livraison garantie à Dakar</p>
+                <div class="hero-buttons">
+                    <a href="index.html#offres" class="cta-button primary">
+                        <i class="fas fa-eye"></i> Voir nos moutons
+                    </a>
+                    <a href="index.html#contact" class="cta-button secondary">
+                        <i class="fas fa-phone-alt"></i> Nous contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-pattern"></div>
+    </header>
+
+    <!-- Section Offres avec carrousels complets -->
+<section id="offres" class="offers-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Qualité Supérieure</div>
+            <h2 class="section-title">Nos <span>Moutons</span> Sélectionnés</h2>
+            <p class="section-subtitle">Chaque animal est élevé avec soin selon les traditions</p>
+        </div>
+        
+        <div class="offers-grid">
+            <!-- Mouton 1 - Ladoum Premium -->
+            <div class="offer-card">
+                <div class="card-header">
+                    
+                    
+                    <div class="sheep-carousel">
+                        <!-- Images du mouton 1 -->
+                        <div class="sheep-slide active">
+                            <img src="images/WhatsApp%20Image%202025-08-16%20à%2011.57.00_3ad3532b.jpg">
+                        </div>
+                       
+                        
+                        <!-- Navigation -->
+                        <button class="carousel-arrow prev" onclick="moveSlide(this.parentNode, -1)">&#10094;</button>
+                        <button class="carousel-arrow next" onclick="moveSlide(this.parentNode, 1)">&#10095;</button>
+                        
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(this.parentNode.parentNode, 0)"></span>
+                            <span class="dot" onclick="currentSlide(this.parentNode.parentNode, 1)"></span>
+                            <span class="dot" onclick="currentSlide(this.parentNode.parentNode, 2)"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <h3><i class="fas fa-award"></i> 210 000 FCFA</h3>
+                    
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-weight-hanging"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Poids</span>
+                                <span class="spec-value">75-80 kg</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-birthday-cake"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Âge</span>
+                                <span class="spec-value">18-20 mois</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-heart"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Santé</span>
+                                <span class="spec-value health excellent">Excellent</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-seedling"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Alimentation</span>
+                                <span class="spec-value">100% naturelle</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Vaccination a jour</li>
+                        <li><i class="fas fa-check-circle"></i> Suivi vétérinaire</li>
+                        <li><i class="fas fa-check-circle"></i> Livraison gratuite</li>
+                    </ul>
+                </div>
+
+                <div class="card-footer">
+                    <a href="https://wa.me/221765217960?text=Je%20souhaite%20r%C3%A9server%20le%20Ladoum%20Premium" 
+                    class="cta-button full-width whatsapp-btn"
+                    target="_blank">
+                    <i class="fab fa-whatsapp"></i> Réserver via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mouton 2 -  -->
+            <div class="offer-card">
+                <div class="card-header">
+                    <div class="sheep-carousel">
+                        <!-- Images du mouton 2 -->
+                        <div class="sheep-slide active">
+                            <img src="images/WhatsApp%20Image%202025-08-16%20à%2011.57.00_3ad3532b.jpg">
+                        </div>
+                        
+                        <!-- Navigation -->
+                        <button class="carousel-arrow prev" onclick="moveSlide(this.parentNode, -1)">&#10094;</button>
+                        <button class="carousel-arrow next" onclick="moveSlide(this.parentNode, 1)">&#10095;</button>
+                        
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(this.parentNode.parentNode, 0)"></span>
+                            <span class="dot" onclick="currentSlide(this.parentNode.parentNode, 1)"></span>
+                            <span class="dot" onclick="currentSlide(this.parentNode.parentNode, 2)"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <h3><i class="fas fa-check-circle"></i> 155 000 FCFA</h3>
+                    
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-weight-hanging"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Poids</span>
+                                <span class="spec-value">55-60 kg</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-birthday-cake"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Âge</span>
+                                <span class="spec-value">14-16 mois</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-heart"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Santé</span>
+                                <span class="spec-value health good">Très bon</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-seedling"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Alimentation</span>
+                                <span class="spec-value">100% naturelle</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Vaccination à jour</li>
+                        <li><i class="fas fa-check-circle"></i> Suivi régulier</li>
+                    </ul>
+                </div>
+                
+                <div class="card-footer">
+                    <a href="https://wa.me/221765217960?text=Je%20souhaite%20r%C3%A9server%20le%20Ladoum%20Standard" 
+                    class="cta-button full-width whatsapp-btn"
+                    target="_blank">
+                    <i class="fab fa-whatsapp"></i> Réserver via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mouton 3 - Ladoum Elite (mis en avant) -->
+            <div class="offer-card featured">
+                <div class="card-header">
+                    
+                    <div class="sheep-carousel">
+                        <!-- Images du mouton 3 -->
+                         <div class="sheep-slide active">
+                            <img src="images/WhatsApp%20Image%202025-08-16%20à%2011.57.00_3ad3532b.jpg">
+                        </div>
+                       
+                        <!-- Navigation -->
+                        <button class="carousel-arrow prev" onclick="moveSlide(this.parentNode, -1)">&#10094;</button>
+                        <button class="carousel-arrow next" onclick="moveSlide(this.parentNode, 1)">&#10095;</button>
+                        
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(this.parentNode.parentNode, 0)"></span>
+                            <span class="dot" onclick="currentSlide(this.parentNode.parentNode, 1)"></span>
+                            <span class="dot" onclick="currentSlide(this.parentNode.parentNode, 2)"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <h3><i class="fas fa-crown"></i>280 000 FCFA</h3>
+                    
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-weight-hanging"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Poids</span>
+                                <span class="spec-value">85-90 kg</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-birthday-cake"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Âge</span>
+                                <span class="spec-value">22-24 mois</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-heart"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Santé</span>
+                                <span class="spec-value health excellent">Exceptionnel</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon"><i class="fas fa-seedling"></i></div>
+                            <div class="spec-info">
+                                <span class="spec-label">Alimentation</span>
+                                <span class="spec-value">100% naturelle</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Vaccination a jour</li>
+                        <li><i class="fas fa-check-circle"></i> Suivi quotidien</li>
+                    </ul>
+                </div>
+                
+                <div class="card-footer">
+                    <a href="https://wa.me/221765217960?text=Je%20souhaite%20r%C3%A9server%20le%20Ladoum%20Elite" 
+                    class="cta-button full-width whatsapp-btn"
+                    target="_blank">
+                    <i class="fab fa-whatsapp"></i> Réserver via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Convention Image -->
+<section id="convention" class="convention-section">
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-tag">Document Officiel</div>
+            <h2 class="section-title">Notre <span>Convention</span></h2>
+            <p class="section-subtitle">Visualisez notre convention type</p>
+        </div>
+
+        <div class="convention-container">
+            <div class="convention-preview">
+                <div class="convention-image-container">
+                    <img src="images/WhatsApp%20Image%202025-08-07%20à%2021.43.40_a30e3bcd.jpg" alt="Aperçu de la convention Taaru Élevage" class="convention-image">
+                    <a href="images/WhatsApp%20Image%202025-08-07%20à%2021.43.40_a30e3bcd.jpg" class="fullscreen-button" data-fancybox="convention" data-caption="Convention Taaru Élevage">
+                        <i class="fas fa-expand"></i> Plein écran
+                    </a>
+                </div>
+                <div class="convention-actions">
+                    <a href="https://drive.google.com/file/d/1oP3cQRYeV9TboMB-ZbKYINA4MCP6X80r/view?usp=sharing" 
+                       class="cta-button secondary download-convention" 
+                       download="Convention-Taaru-Elevage.pdf"
+                       title="Télécharger la convention (PDF, 2.5 Mo)">
+                    <button class="cta-button primary request-convention">
+                        <i class="fas fa-envelope"></i> Télécharger (PDF)
+                    </button>
+
+                        <i class="fas fa-envelope"></i> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="convention-details">
+                <h3>Points clés de la convention</h3>
+                <ul class="convention-features">
+                    <li><i class="fas fa-check-circle"></i> Modalités de paiement échelonné</li>
+                    <li><i class="fas fa-check-circle"></i> Engagements réciproques</li>
+                    <li><i class="fas fa-check-circle"></i> Spécifications des moutons</li>
+                    <li><i class="fas fa-check-circle"></i> Conditions de livraison</li>
+                    <li><i class="fas fa-check-circle"></i> Garanties sanitaires</li>
+                </ul>
+
+                <div class="convention-important">
+                    <h4><i class="fas fa-exclamation-circle"></i> Information importante</h4>
+                    <p>Ceci est un modèle de convention. La version finale sera personnalisée avec vos informations et signée en notre présence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Process Section - Version améliorée -->
+<section id="process" class="process-section">
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-tag">Notre Engagement</div>
+            <h2 class="section-title">Un <span>Processus</span> Transparent</h2>
+            <p class="section-subtitle">De notre ferme à votre fête</p>
+        </div>
+        
+        <div class="process-steps">
+            <!-- Étape 1 -->
+            <div class="process-item">
+                <div class="process-icon">
+                    <div class="icon-circle">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+                <div class="process-content">
+                    <h3>Réservation</h3>
+                    <p>Signature de la convention avec paiement échelonné</p>
+                </div>
+            </div>
+            
+            <div class="process-arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            
+            <!-- Étape 2 -->
+            <div class="process-item">
+                <div class="process-icon">
+                    <div class="icon-circle">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+                <div class="process-content">
+                    <h3>Suivi</h3>
+                    <p>Photos régulières de votre mouton</p>
+                </div>
+            </div>
+            
+            <div class="process-arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            
+            <!-- Étape 3 -->
+            <div class="process-item">
+                <div class="process-icon">
+                    <div class="icon-circle">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                </div>
+                <div class="process-content">
+                    <h3>Contrôle</h3>
+                    <p>Vérification finale du poids et de la santé</p>
+                </div>
+            </div>
+            
+            <div class="process-arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            
+            <!-- Étape 4 -->
+            <div class="process-item">
+                <div class="process-icon">
+                    <div class="icon-circle">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                </div>
+                <div class="process-content">
+                    <h3>Livraison</h3>
+                    <p>À domicile avant la Tabaski</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section Contact améliorée -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-tag">Contactez-nous</div>
+            <h2 class="section-title">Réservez votre <span>Mouton</span></h2>
+            <p class="section-subtitle">Remplissez le formulaire ou contactez-nous directement</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <!-- Carte 1 -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Téléphone</h3>
+                    <p>+221 76 521 79 60</p>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>+221 76 521 79 60</p>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>padpour52@gmail.com</p>
+                </div>
+
+                <!-- Carte 4 -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adresse</h3>
+                    <p>Ferme Taaru Élevage, Yoff Ngaparou, Dakar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer amélioré -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html#" class="logo">
+                        <i class="fas fa-paw"></i> <span>Taaru</span>Élevage
+                    </a>
+                    <p>Élevage de moutons premium pour la Tabaski au Sénégal</p>
+                    <div class="footer-social">
+                        <a href="index.html#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html#offres"><i class="fas fa-chevron-right"></i> Nos moutons</a></li>
+                        <li><a href="index.html#process"><i class="fas fa-chevron-right"></i> Notre processus</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contactez-nous</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Yoff Ngaparou, Dakar, Sénégal</li>
+                        <li><i class="fas fa-phone-alt"></i> +221 76 521 79 60</li>
+                        <li><i class="fas fa-envelope"></i> padpour52@gmail.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-legal">
+                    <h3>Informations légales</h3>
+                    <ul>
+                        <li><i class="fas fa-file-alt"></i> NINEA: 00845069</li>
+                        <li><i class="fas fa-file-contract"></i> RCCM: SN.DKR.2020.A14239</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Taaru Élevage. Tous droits réservés.</p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
